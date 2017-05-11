@@ -27,7 +27,7 @@ module Virtus
     # @return [self]
     #
     # @api private
-    def attribute(name, type = nil, options = {})
+    def attribute(name, type = nil, options = { required: false })
       @attribute_definitions << [name, type, options]
       self
     end
